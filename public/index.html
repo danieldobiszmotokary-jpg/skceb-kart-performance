@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SKCEB Kart Performance Tool</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>SKCEB Kart Performance — Advanced</h1>
+    <div class="controls">
+      <input id="apexUrl" type="text" placeholder="Paste Apex Timing link here" />
+      <button id="startBtn">Start</button>
+      <button id="stopBtn" disabled>Stop</button>
+      <label><input id="autoDetect" type="checkbox" checked /> Auto-detect pit events</label>
+    </div>
+
+    <div id="status">Idle</div>
+
+    <section class="panels">
+      <div class="panel">
+        <h2>Kart Rankings</h2>
+        <table id="rankTable">
+          <thead><tr><th>Kart</th><th>Score</th><th>Confidence</th><th>Avg lap</th><th>Best</th><th>Stint</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h2>Pit / Stints</h2>
+        <ul id="pitLog"></ul>
+      </div>
+
+      <div class="panel wide">
+        <h2>Selected Kart Trend</h2>
+        <canvas id="trendChart" width="600" height="240"></canvas>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
