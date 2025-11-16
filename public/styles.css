@@ -1,0 +1,11 @@
+body{font-family:Arial,Helvetica,sans-serif;background:#f4f6f8;color:#111;margin:0;padding:20px}
+.container{max-width:1100px;margin:0 auto}
+.controls{display:flex;gap:8px;margin-bottom:10px;align-items:center}
+.controls input{flex:1;padding:8px}
+.controls button{padding:8px 12px}
+.panels{display:grid;grid-template-columns:1fr 340px;gap:12px}
+.panel{background:white;border-radius:8px;padding:12px;box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+.panel.wide{grid-column:1/-1}
+table{width:100%;border-collapse:collapse}
+th,td{padding:6px 8px;border-bottom:1px solid #eee;text-align:left}
+#status{margin-bottom:10px}
